@@ -1,0 +1,1484 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+}
+
+.navbar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 72px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+    /* border:2px solid purple ; */
+    padding: 0;
+}
+
+.logo-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height:72px;
+    margin: 0px;
+    padding: 0;
+    /* border: 2px solid green; */
+}
+
+.logo-first-part{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    color: #27A365;
+}
+
+.logo-second-part{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    color: #5C5D5D;
+}
+
+.logo-img{
+    margin-bottom: 3px;
+    width: 22px;
+    height: 22px;
+}
+
+.search-container{
+    width: 40%;
+    height:72px;
+    margin: 0;
+    padding: 0;
+    /* border:2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container i{
+    z-index: 1;
+    margin-right:-30px;
+    color: #7A7A7A;
+}
+
+.search-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 42px;
+    background: #F2F2F2;
+    border-radius: 21px;
+    border: none;
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.create-account-container{
+    width: 30%;
+    height:72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border:2px solid blue; */
+    padding: 0;
+    margin: 0;
+}
+
+.create-account:hover{
+    background-color: #f0f0f0;
+}
+
+.create-account{
+height: 21px;
+font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+color: #2E2E2E;
+}
+
+.free-line{
+    color:#2F6CE5 ;
+    font-weight: bold;
+}
+
+.banner-container{
+    position: relative;
+    width: 100%;
+    height: 440px;
+    background-image:  linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%) , url("https://images.unsplash.com/photo-1455894127589-22f75500213a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=787&q=80");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-container-2{
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 440px;
+    background-image:  linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%) , url("https://images.unsplash.com/photo-1455894127589-22f75500213a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=787&q=80");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-title{
+    width: fit-content;
+    height: fit-content;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 47px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 300px;
+    left: 200px;
+}
+
+.banner-followers{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 350px;
+    left: 200px;
+}
+
+.below-banner-hor-line{
+    border: 1px solid #E0E0E0;
+    width: 90%;
+}
+
+.menu-container{
+    display: flex;
+    justify-content: content;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.menu-container-2{
+    display: none;
+    justify-content: content;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.list-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    padding-top: 20px;
+ }
+
+.menu-btn-container{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inactive{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #8A8A8A;
+    margin-left:10px;
+}
+
+.active{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    margin-left:10px;
+    color: #000000;
+}
+
+.post-btn{
+    width: 133px;
+    height: 36px;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    background: #EDEEF0;
+    border:none;
+    outline:none;
+    border-radius: 4px;
+}
+
+.join-group-btn{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    width: 125px;
+    height: 36px;
+    background: #2F6CE5;    
+    border:none;
+    outline:none;
+    border-radius: 4px;
+    color:white;
+    margin-left:5px;
+}
+
+.leave-grp-icon{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    width: 135px;
+    height: 36px;
+    background: #FFFFFF; 
+    outline:none;
+    color: #6A6A6B;
+    margin-left:5px;
+    border: 0.8px solid #989899;
+    border-radius: 4px;
+}
+
+/* .active-hori-line{
+    position: absolute;
+    left: 23.8%;
+    top: 37.5%;
+     width: 100px;
+    display: block;
+    border: 1px solid black;
+    color:black;
+} */
+
+.horizontal-line-below-location{
+    display: flex;
+    justify-content: center;
+}
+
+.below-menu-hor-line{
+    border: 1px solid #E0E0E0;;
+    width: 90%;
+    height: 0px;
+}
+
+.grp-icon {
+    width: 30px;
+    height: 15px;
+}
+
+.logout-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.post-location-container{
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.post-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 80%;
+    height: 472px;
+    border-radius: 4px;
+    border: 1px solid #E0E0E0;
+    background: #FFFFFF;
+}
+
+.card-img-container{
+    width: 100%;
+    height: 220px;
+}
+
+.card-img{
+    width: 100%;
+    height: 220px;
+    background:url("https://images.unsplash.com/photo-1668545813197-d68b020261dc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80");
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.card-body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+    height: 252px;
+    padding: 20px;
+}
+
+.card-category{
+    width: 100%;
+    height: 25px;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    color: #000000;
+}
+
+.title-dot-icon{
+    display: flex;
+    justify-content: space-between;
+     align-items: center;
+     width: 100%;
+     height: 60px;
+}
+
+.title-container{
+    height: 60px;
+    width: 90%;
+}
+
+.card-title{
+height: 60px;
+width: 100%;
+font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 134.17%;
+color: #000000;
+}
+
+.dot-icon-container{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dot-icon{ 
+  width: 20px;
+}
+
+.card-desc{
+width: 100%;
+height: 60px;
+font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 19px;
+line-height: 134.17%;
+color: #5C5C5C;
+}
+
+.user-image-view-share-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: start;
+}
+
+.user-image-name{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 40%;
+}
+
+
+.user-img{
+width: 48px;
+height: 48px;
+background: url("https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+background-size: cover;
+background-position: center;
+border-radius: 24px;
+   
+}
+
+.user-name{
+
+width: 125px;
+height: 24px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 10px;
+font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 23px;
+color: #000000;
+}
+
+.view-icon-count{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.view-icon{
+    margin-top: -2px;
+    width: 20px;
+    height: 13px;
+}
+
+.view-count{
+    width: 100px;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 17px;
+    color: #525252;
+}
+
+.share-icon{
+    border-radius: 2px;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    background: #d6d6d6;
+}
+
+.card-img-2{
+    width: 100%;
+    height: 220px;
+    background:url("https://images.unsplash.com/photo-1559199496-490b6e15a0b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGV0ZXJuYXxlbnwwfDB8MHx8&w=1000&q=80");
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.card-img-3{
+    width: 100%;
+    height: 220px;
+    background:url("https://images.unsplash.com/photo-1607914421052-60923861d626?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTN8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80");
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.user-img-2{
+    width: 48px;
+height: 48px;
+background: url(" https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+background-size: cover;
+background-position: center;
+border-radius: 24px;
+   
+}
+
+.user-img-3{
+    width: 48px;
+height: 48px;
+background: url("https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80");
+background-size: cover;
+background-position: center;
+border-radius: 24px;
+  
+}
+
+.card-container-4{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 80%;
+    height: 272px;
+    border-radius: 4px;
+    border: 1px solid #E0E0E0;
+    background: #FFFFFF;
+}
+.user-img-4{
+    width: 48px;
+    height: 48px;
+    background: url("https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+    background-size: cover;
+    background-position: center;
+    border-radius: 24px;
+    
+}
+
+.job-company-info{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+
+.suitcase-icon  , .location-icon , .edit-icon{
+    width: 15px;
+    height: 15px;
+}
+
+.job-comp{
+    width: 60%;
+}
+
+.job-loc{
+    width: 40%;
+}
+
+.job-company ,.job-location{
+    width:100%;
+    height: 25px;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 23px;
+    color: #000000;
+  
+}
+
+.apply-btn-container{
+    width: 100%;
+    margin-bottom: 7px;
+}
+
+.apply-btn {
+    width: 100%;
+    height: 36px;
+    background: #FFFFFF;
+    border: 0.7px dashed #A9AEB8;
+    border-radius: 10px;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 140.4%;
+    text-align: center;
+    color: #02B875;
+}
+
+.website-btn{
+    width: 100%;
+    height: 36px;
+    background: #FFFFFF;
+    border: 0.7px dashed #A9AEB8;
+    border-radius: 10px;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 140.4%;
+    text-align: center;
+    color: #E56135;
+}
+
+
+.location-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 400px;
+    margin-top: 20px;
+}
+
+.location-edit-icon{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.location-container-info{
+    width: 200px;
+    height: 50px;
+}
+
+.below-location-hori-line{
+   margin-top: -20px;
+   width: 90%;
+   margin-left: 20px;
+}
+
+
+.info-icon-msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    
+}
+
+.inf-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:80%;
+}
+
+.info-msg{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+    opacity: 0.5;
+}
+
+.excl-icon-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 50px;
+}
+
+.exclamation{
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+}
+
+.modal-top-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 736px;
+    height: 500px;
+}
+
+.modal-content{
+    width: 736px;
+    height: 500px;
+}
+
+.modal-header{
+    width: 736px;
+    background: #EFFFF4;
+}
+
+.modal-title{
+    width: 100%;
+    height: 16px;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #008A45;
+}
+
+.new-account-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.new-account-container-2{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.new-account-form-container{
+    width: 60%;
+    height: 400px;
+}
+
+.new-account-img-container{
+    width: 40%;
+    height: 400px;
+}
+
+.heading-create-account{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+}
+
+.first-name-input , .last-name-input{
+    width: 170px;
+    height: 40px;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    background: #F7F8FA;
+    border: 1px solid #D9D9DB;
+    outline: none;
+}
+
+.last-name-input{
+    margin-left: -4px;
+}
+
+.password , .confirm-password,.email{
+    width: 340px;
+    height: 40px;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    background: #F7F8FA;
+    border: 1px solid #D9D9DB;
+    outline: none;
+}
+
+.create-account-btn-container , .log-in-with-fb , .log-in-with-google{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btn-create-account{
+    width: 340px;
+    height: 40px;
+    background: #2F6CE5;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-log-in-fb , .btn-log-in-google{
+    width: 340px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 0.6px solid #D9D9DB;
+    border-radius: 2px;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    outline: none;
+    cursor: pointer;
+}
+
+.fb-logo {
+    width: 20px;
+    height:20px;
+}
+
+.google-logo{
+    width: 30px;
+    height:25px;
+}
+
+.image-of-create-account{
+    width: 100%;
+    height:300px;
+    background: url("login-icon.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.already-account{
+    font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 17px;
+}
+
+.sign-in-link{
+    color: #2F6CE5;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.terms-and-condition{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+}
+
+.terms-and-condition-2{
+    display: none;
+}
+
+.forgot-password{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.account-link{
+    text-decoration: none;
+    color: white;
+}
+
+.dashboard-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-image{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+  background-image: url("https://www.washburnhouse.com/wp-content/uploads/2019/08/luis-villasmil-1222180-unsplash-1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.user-dashboard-name-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 5px;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.recommend-grp-heading{
+    width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+    font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: #000000;
+margin-bottom: 20px;
+}
+
+.thumbs-up-icon{
+    width: 20px;
+    height:20px;
+}
+
+.grp-lists{
+    list-style: none;
+}
+
+.list-img-cont , .list-title-cont , .list-btn-cont{
+    width: 100%;
+}
+
+.list-img-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-img-1{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: url("https://imageio.forbes.com/blogs-images/tamiforman/files/2019/04/zach-betten-40138-unsplash-1200x797.jpg?format=jpg&width=960");
+    background-size: cover;
+    background-position: center;
+}
+
+.list-img-2{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: url("https://www.ravishly.com/sites/default/files/images/article/2019-06/m-b-m-774384-unsplash%2520copy.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.list-img-3{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: url("https://mgb-law.com/wp-content/uploads/2019/02/hunters-race-408744-unsplash-1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.list-img-4{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: url("https://images.unsplash.com/photo-1528217580778-96e570819666?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8&w=1000&q=80");
+    background-size: cover;
+    background-position: center;
+}
+
+.rec-grp-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.grp-list{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.list-title{
+    font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 18px;
+margin-left: 5px;
+}
+
+.followed-btn{
+    width: 73px;
+    height: 24px;
+    color: white;
+    background: #000000;
+    border-radius: 14px;
+    font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+border: none;
+outline: none;
+margin-left: 5px;
+
+}
+
+.list-btn-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.follow-btn{
+    margin-left: 5px;
+width: 60px;
+height: 24px;
+background: #EDEEF0;
+border-radius: 14px;
+font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+border: none;
+outline: none;
+}
+
+@media screen and (max-width:1258px) {
+    .card-container {
+        width: 70%;
+    }
+    .card-container-4 {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:1046px) {
+    .card-title{
+        /* height: 60px;
+        width: 100%;
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: 600; */
+        font-size: 20px;
+        /* line-height: 134.17%;
+        color: #000000; */
+        }
+}
+
+@media screen and (max-width:1024px) {
+    .banner-title{
+        left: 150px;
+    }
+    
+    .banner-followers{
+        left: 150px;
+    }
+}
+
+@media screen and (max-width:959px) {
+    .card-title{
+        font-size: 16px;
+    }
+    .card-desc{
+            font-size: 18px;
+    }
+    .job-company ,.job-location{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:769px) {
+    .user-image-name{
+        width: 60%;
+    }
+    .search-input{
+        font-size: 12px;
+    }
+    .modal-top-heading{
+        width: 536px;
+        height: 500px;
+    }
+    .modal-content{
+        width: 536px;
+        height: 500px;
+    }
+    
+    .modal-header{
+        width: 536px;
+        background: #EFFFF4;
+    }
+    .modal-title{
+        font-size: 11px;
+    }
+
+    .new-account-form-container{
+        width:100%;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .new-account-img-container{
+      display: none;
+    }
+    
+    .heading-create-account{
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 31px;
+        color: #000000;
+    }
+    
+    .first-name-input , .last-name-input{
+        width: 170px;
+        height: 40px;
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: 500;
+        background: #F7F8FA;
+        border: 1px solid #D9D9DB;
+        outline: none;
+    }
+    
+    .last-name-input{
+        margin-left: -4px;
+    }
+    
+    .password , .confirm-password,.email{
+        width: 340px;
+        height: 40px;
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: 500;
+        background: #F7F8FA;
+        border: 1px solid #D9D9DB;
+        outline: none;
+    }
+    
+    .create-account-btn-container {
+        display: none;
+    }
+    
+    .create-account-btn-container-2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .btn-create-acc-2{
+        width: 80%;
+    }
+    
+    .btn-create-account{
+        width: 60%;
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: 500;
+    }
+    .link-sign-in-btn-container-2{
+        width: 40%;
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .post-location-container{
+        display: block;
+    }
+    .post-container{
+        width: 100%;
+    }
+    .card-container{
+        width: 90%;
+    }
+    .card-container-4{
+        width: 90%;
+    }
+    .location-container{
+        display: none;
+    }
+    .menu-container{
+        display: none;
+    }
+    .menu-container-2{
+        display: flex;
+    }
+    .banner-title {
+        left: 100px;
+    }
+    .banner-followers{
+        left: 100px;
+    }
+    .search-container{
+        display: none;
+      }
+      .logo-container{
+        width: 50%;
+    }
+  .create-account-container{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width:577px) {
+    
+    .modal-top-heading{
+        width: 100%;
+        height: 500px;
+    }
+    .modal-content{
+        width: 90%;
+        height: 500px;
+    }
+    
+    .modal-header{
+        display: none;
+    }
+    .modal-title{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:486px) {
+  
+   
+  .logo-first-part{
+    
+    font-size: 28px;
+  
+}
+
+.logo-second-part{
+    font-size: 28px;
+}
+.create-account {
+    font-size: 14px;
+}
+
+.banner-title{
+    font-size: 32px;
+    left: 70px;
+}
+
+.banner-followers {
+
+    font-size: 16px;
+    left: 70px;
+}
+.active {
+    font-weight: 600;
+    font-size: 14px;
+}
+.post-btn {
+    width: 113px;
+    font-size: 14px;
+}
+
+
+.first-name-input, .last-name-input {
+    width: 150px;
+    height: 40px;
+}
+.password, .confirm-password, .email {
+    width: 300px;
+    height: 40px;
+}
+
+.form-sign-up , .form-sign-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.create-account-btn-container-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin-top: 10px;
+}
+.btn-create-account {
+    width: 60%;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 500;
+}
+.btn-log-in-fb, .btn-log-in-google {
+    width: 300px;
+    height: 40px;
+    font-size: 14px;
+}
+
+}
+
+@media screen and (max-width:425px){
+    .card-container{
+        width: 100%;
+    }
+    .card-container-4{
+        width: 100%;
+    }
+    .banner-container{
+        display: none;
+    }
+    .banner-container-2{
+        display: flex;
+    }
+    .join-grp-btn-banner-cont{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .join-grp-banner-btn{
+    width: 76px;
+    height: 28px;
+
+border: 0.8px solid #FFFFFF;
+border-radius: 4px;
+ 
+        font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    background: transparent;
+
+color: #FFFFFF;
+    }
+
+    .arrow-icon-container{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        
+        width: 6%;
+        height:6%;
+        background: url("https://flaticons.net/icon.php?slug_category=mobile-application&slug_icon=left-arrow");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .first-name-input, .last-name-input {
+        width: 120px;
+        height: 40px;
+    }
+    .password, .confirm-password, .email {
+        width: 240px;
+        height: 40px;
+    }
+    
+    .form-sign-up , .form-sign-up{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .create-account-btn-container-2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 240px;
+        margin-top: 10px;
+    }
+    .btn-create-account {
+        width: 60%;
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .btn-log-in-fb, .btn-log-in-google {
+        width: 240px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:394px) {
+    .banner-title{
+        left:20px;
+        font-size: 30px;
+    }
+    .banner-followers{
+        left: 20px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:351px) {
+    .banner-title{
+        left:10px;
+        font-size: 28px;
+    }
+    .banner-followers{
+        left: 10px;
+        font-size: 12px;
+    }
+    .first-name-input, .last-name-input {
+        width: 100px;
+        height: 40px;
+    }
+    .password, .confirm-password, .email {
+        width: 200px;
+        height: 40px;
+    }
+    
+    .form-sign-up , .form-sign-up{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .create-account-btn-container-2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 200px;
+        margin-top: 10px;
+    }
+    .btn-create-account {
+        width: 60%;
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .btn-log-in-fb, .btn-log-in-google {
+        width: 200px;
+        height: 40px;
+        font-size: 14px;
+    }
+    .logo-first-part , .logo-second-part{
+        font-size: 24px;
+    }
+    .logo-img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .create-account{
+        font-size: 12px;
+    }
+    .user-image-view-share-container{
+        width: 100%;
+    }
+    .user-image-name{
+        width: 50%;
+       
+    }
+
+    .view-icon-count{
+        width: 50%;
+    }
+    .card-desc{
+        font-size: 16px;
+    }
+    .job-company, .job-location {
+        font-size: 10px;
+    }
+    .user-name {
+      
+        margin-top: 10px;
+
+        font-size: 14px;
+        margin-left: -16px;
+        
+    }
+    .arrow-icon-container {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 9%;
+        height: 5%;
+        background: url(https://flaticons.net/icon.php?slug_category=mobile-application&slug_icon=left-arrow);
+        background-size: cover;
+        background-position: center;
+    }
+    .post-btn {
+        font-weight: 600;
+    }
+}
